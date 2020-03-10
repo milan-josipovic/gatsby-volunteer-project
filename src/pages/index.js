@@ -1,11 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Services from "../components/Home/Services"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 export default ({ data }) => (
   <Layout>
     <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
@@ -13,9 +13,9 @@ export default ({ data }) => (
         title="volonteri u akciji"
         info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, cupiditate."
       >
-        <Link to="/action" className="btn-white">
+        <AniLink fade to="/action" className="btn-white">
           istrazite akcije
-        </Link>
+        </AniLink>
       </Banner>
     </StyledHero>
 
