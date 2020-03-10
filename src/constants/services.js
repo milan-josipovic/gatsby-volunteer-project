@@ -1,5 +1,11 @@
 import React from "react"
-import { FaTree, FaBook, FaBriefcaseMedical } from "react-icons/fa"
+import {
+  FaTree,
+  FaBook,
+  FaBriefcaseMedical,
+  FaHeart,
+  FaStar,
+} from "react-icons/fa"
 
 export default [
   {
@@ -15,6 +21,16 @@ export default [
   {
     icon: <FaBriefcaseMedical />,
     title: "cuvamo zdravlje",
+    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+  },
+  {
+    icon: <FaStar />,
+    title: "negovanje tradicija dora",
+    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+  },
+  {
+    icon: <FaHeart />,
+    title: "humanost & dobrota na delu",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
   },
 ]
