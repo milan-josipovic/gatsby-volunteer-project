@@ -6,6 +6,7 @@ import Services from "../components/Home/Services"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import FeaturedActions from "../components/Home/FeaturedActions"
 export default ({ data }) => (
   <Layout>
     <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
@@ -21,6 +22,7 @@ export default ({ data }) => (
 
     <About />
     <Services />
+    <FeaturedActions />
   </Layout>
 )
 
