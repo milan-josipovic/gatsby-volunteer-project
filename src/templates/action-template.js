@@ -7,6 +7,9 @@ import Img from "gatsby-image"
 import { FaMap } from "react-icons/fa"
 import Day from "../components/SingleAction/Day"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+
+import ContactApplication from "../components/Contact/ContactApplication"
+
 const Template = ({ data }) => {
   const {
     name,
@@ -58,6 +61,7 @@ const Template = ({ data }) => {
             nazad na akcije
           </AniLink>
         </div>
+        <ContactApplication />
       </section>
     </Layout>
   )

@@ -38,7 +38,6 @@ const FeaturedActions = () => {
           return <Action key={node.contentful_id} action={node} />
         })}
       </div>
-
       <AniLink fade to="/action" className="btn-primary">
         sve akcije
       </AniLink>
