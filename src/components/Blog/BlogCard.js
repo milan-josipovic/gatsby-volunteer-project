@@ -8,13 +8,9 @@ const BlogCard = ({ blog }) => {
   return (
     <article className={styles.blog}>
       <div className={styles.imgContainer}>
-        <Image
-          fluid={image[0].fluid}
-          className={styles.img}
-          alt="single post"
-        />
+        <Image fluid={image.fluid} className={styles.img} alt="single post" />
         <AniLink fade className={styles.link} to={`/blog/${slug}`}>
-          read more
+          procitajte vise
         </AniLink>
         <h6 className={styles.date}>{published}</h6>
       </div>

@@ -9,7 +9,7 @@ const getPosts = graphql`
     posts: allContentfulPost(sort: { fields: published, order: DESC }) {
       edges {
         node {
-          published(formatString: "MMMM Do, YYYY ")
+          published(formatString: "D.M.Y")
           title
           slug
           id: contentful_id
@@ -28,7 +28,7 @@ const BlogList = () => {
 
   return (
     <section className={styles.blog}>
-      <Title title="our" subtitle="blogs" />
+      <Title title="nas" subtitle="blog" />
       <div className={styles.center}>
         {posts.edges.map(({ node }) => {
           return <BlogCard key={node.id} blog={node} />
