@@ -17,7 +17,7 @@ module.exports = {
     siteUrl: "https://gatsby-milutin-djuricic-project.netlify.com",
   },
   plugins: [
-    `react-helmet`,
+    `gatsby-plugin-react-helmet`,
 
     {
       resolve: `gatsby-source-filesystem`,
