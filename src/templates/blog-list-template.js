@@ -29,7 +29,7 @@ const Blog = props => {
         <section className={styles.links}>
           {!isFirst && (
             <AniLink fade to={prevPage} className={styles.link}>
-              Prethodna
+              Prev
             </AniLink>
           )}
 
@@ -51,7 +51,7 @@ const Blog = props => {
           })}
           {!isLast && (
             <AniLink fade to={nextPage} className={styles.link}>
-              Sledeca
+              Next
             </AniLink>
           )}
         </section>

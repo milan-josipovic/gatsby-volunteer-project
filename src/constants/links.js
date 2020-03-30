@@ -6,14 +6,14 @@ export default [
   {
     path: "/action",
     text: "akcija",
-  },
-  {
-    path: "/blog",
-    text: "blog",
-  },
+  }, //,
+  // {
+  //   path: "/blog",
+  //   text: "blog",
+  // },
   {
     path: "/blogs",
-    text: "blogs",
+    text: "blog",
   },
   {
     path: "/about",

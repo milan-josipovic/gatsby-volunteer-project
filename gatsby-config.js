@@ -12,8 +12,13 @@ module.exports = {
     description:
       "Napravimo promenu - stitimo prirodu, prenosimo znanje & cuvajmo zdravlje",
     author: "@Milan Josipovic",
+    twitterUsername: "@_milanjosipovic",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://gatsby-milutin-djuricic-project.netlify.com",
   },
   plugins: [
+    `react-helmet`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
