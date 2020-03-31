@@ -2,9 +2,11 @@ import React from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
+import SEO from "../components/SEO"
 const about = ({ data }) => {
   return (
     <Layout>
+      <SEO title="O nama" />
       <StyledHero img={data.aboutBcg.childImageSharp.fluid} />
     </Layout>
   )

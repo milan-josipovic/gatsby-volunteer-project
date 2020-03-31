@@ -7,8 +7,8 @@ import Img from "gatsby-image"
 import { FaMap } from "react-icons/fa"
 import Day from "../components/SingleAction/Day"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-
 import ContactApplication from "../components/Contact/ContactApplication"
+import SEO from "../components/SEO"
 
 const Template = ({ data }) => {
   const {
@@ -25,6 +25,7 @@ const Template = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={name} />
       <StyledHero img={mainImage.fluid} />
       <section className={styles.template}>
         <div className={styles.center}>
